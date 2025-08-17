@@ -58,7 +58,7 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'EZ THEME',
+        siteName: '贝壳考研',
         siteDescription: 'EZ UI',
         // copyright会自动使用当前年份
         copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
@@ -80,7 +80,7 @@ export const config  = {
         // 自定义landing页面路径（相对于public目录
         // 例如：'testlandingpage.html'
         // 如果为空则不启用自定义landing页面
-        customLandingPage: ''
+        customLandingPage: 'landingpage.html'
     },
 
     // 默认语言和主题配置
@@ -95,7 +95,7 @@ export const config  = {
         primaryColor: '#355cc2',
 
         // 是否启用落地页 (true=启用, false=禁用)
-        enableLandingPage: true // 默认启用
+        enableLandingPage: false // 默认启用
     },
 
     // 认证页面功能配置
@@ -134,7 +134,7 @@ export const config  = {
     // 认证页面布局配置
     AUTH_LAYOUT_CONFIG: {
         // 布局类型: 'center' 为居中卡片布局, 'split' 为左右分栏布局
-        layoutType: 'center',
+        layoutType: 'split',
 
         // 左右分栏布局配置 (仅当 layoutType 为 'split' 时生效)
         splitLayout: {
@@ -165,7 +165,7 @@ export const config  = {
     // 商店页面配置
     SHOP_CONFIG: {
         // 是否在商店导航上显示热销标记
-        showHotSaleBadge: false,
+        showHotSaleBadge: true,
 
         // 是否显示套餐特性卡片 (true=显示, false=隐藏)
         showPlanFeatureCards: true, // 默认显示
@@ -208,12 +208,12 @@ export const config  = {
             cooldownHours: 0,
 
             // 等待时间（秒），用户需要等待多少秒才能关闭弹窗，设为0表示无需等待
-            closeWaitSeconds: 0
+            closeWaitSeconds: 3
         }
     },
     ORDER_CONFIG: {
         // 下单前二次确认
-        confirmOrder: true,
+        confirmOrder: false,
         // 下单前二次确认内容
         confirmOrderContent: "<p><strong style='color: red'>无法提供相关教程和使用说明。</strong></p><p><strong style='color: red'>不会使用请勿购买，没有退款政策</strong></p>",
 
@@ -267,15 +267,15 @@ export const config  = {
         showAndroid: true,
         showMacOS: true,
         showWindows: true,
-        showLinux: true,
-        showOpenWrt: true,
+        showLinux: false,
+        showOpenWrt: false,
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
             ios: 'https://apps.apple.com/app/xxx',
-            android: 'https://play.google.com/store/apps/xxx',
-            macos: 'https://github.com/xxx/releases/latest',
-            windows: 'https://github.com/xxx/releases/latest',
+            android: 'https://zz.liuliuhan.cfd/f/5qIa/cmfa-2.11.14-meta-universal-release.apk',
+            macos: 'https://zz.liuliuhan.cfd/f/ZWHk/Clash.Verge_2.3.2_aarch64.dmg',
+            windows: 'https://666.mofadaohang.com/xiazai/Clash.Verge_2.3.1_x64-setup.exe',
             linux: 'https://github.com/xxx/releases/latest',
             openwrt: 'https://github.com/xxx/releases/latest'
         },
@@ -284,41 +284,41 @@ export const config  = {
 
         // iOS平台
         showShadowrocket: true,
-        showSurge: true,
-        showStash: true,
-        showQuantumultX: true,
-        showHiddifyIOS: true,
-        showSingboxIOS: true,
-        showLoon: true,
+        showSurge: false,
+        showStash: false,
+        showQuantumultX: false,
+        showHiddifyIOS: false,
+        showSingboxIOS: false,
+        showLoon: false,
 
         // Android平台客户端
         showFlClashAndroid: true,
-        showV2rayNG: true,
+        showV2rayNG: false,
         showClashAndroid: true,
-        showSurfboard: true,
+        showSurfboard: false,
         showClashMetaAndroid: true,
-        showNekobox: true,
-        showSingboxAndroid: true,
-        showHiddifyAndroid: true,
+        showNekobox: false,
+        showSingboxAndroid: false,
+        showHiddifyAndroid: false,
 
         // Windows平台客户端
-        showFlClashWindows: true,
+        showFlClashWindows: false,
         showClashVergeWindows: true,
-        showClashWindows: true,
-        showNekoray: true,
-        showSingboxWindows: true,
-        showHiddifyWindows: true,
+        showClashWindows: false,
+        showNekoray: false,
+        showSingboxWindows: false,
+        showHiddifyWindows: false,
 
         // MacOS平台客户端
         showFlClashMac: true,
         showClashVergeMac: true,
         showClashX: true,
         showClashMetaX: true,
-        showSurgeMac: true,
-        showStashMac: true,
-        showQuantumultXMac: true,
-        showSingboxMac: true,
-        showHiddifyMac: true
+        showSurgeMac: false,
+        showStashMac: false,
+        showQuantumultXMac: false,
+        showSingboxMac: false,
+        showHiddifyMac: false
     },
 
     // ================ Xiao 版本的配置 =======================
@@ -326,7 +326,7 @@ export const config  = {
     // 用户中心页面配置
     PROFILE_CONFIG: {
         // 是否显示礼品卡兑换栏目 (true=显示, false=隐藏)
-        showGiftCardRedeem: false, // 只有Xiao-V2board支持礼品卡兑换
+        showGiftCardRedeem: true, // 只有Xiao-V2board支持礼品卡兑换
 
         // 是否显示最近登录设备栏目 (true=显示, false=隐藏)
         showRecentDevices: true
@@ -434,7 +434,7 @@ export const config  = {
     // 邀请页面配置
     INVITE_CONFIG: {
         // 是否在导航栏的邀请按钮上显示返利标记
-        showCommissionBadge: false,
+        showCommissionBadge: true,
 
         // 返佣记录每页显示数量（最小值为10，API限制每次请求最少需要返回10条记录）
         recordsPerPage: 10,
