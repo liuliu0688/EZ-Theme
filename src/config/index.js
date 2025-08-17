@@ -52,7 +52,7 @@ export const config  = {
     API_MIDDLEWARE_URL: 'https://beihhdd.liuliuhan.cfd',
 
     // 中间件路由前缀 (与中间件服务器配置保持一致)
-    API_MIDDLEWARE_PATH: '/proxy/ez',
+    API_MIDDLEWARE_PATH: '/auth/check',
 
     //=======================================================
 
