@@ -29,9 +29,9 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://w5x8mu2a9943r.ezdemo.xyz/api/v1',
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://gy1v06omopzc8.ezdemo.xyz/api/v1'
+            '',
+            '',
+            ''
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -66,7 +66,7 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'EZ THEME',
+        siteName: '贝壳考研',
         siteDescription: 'EZ UI',
         // copyright会自动使用当前年份
         copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
@@ -104,7 +104,7 @@ export const config  = {
         primaryColor: '#355cc2',
 
         // 是否启用落地页 (true=启用, false=禁用)
-        enableLandingPage: true // 默认启用
+        enableLandingPage: false // 默认启用
     },
 
     // 认证页面功能配置
@@ -124,26 +124,26 @@ export const config  = {
         // 认证页面弹窗公告配置
         popup: {
             // 是否启用弹窗
-            enabled: false,
+            enabled: true,
 
             // 弹窗标题
-            title: "用户须知 (可自定义开启)",
+            title: "用户须知",
 
             // 弹窗内容 (支持HTML)
-            content: "<p><strong>欢迎使用我们的服务！</strong></p><p>请注意以下事项：</p><ul><li>请妥善保管您的账号信息</li><li>如有问题请联系客服</li></ul>",
+            content: "<p><strong>欢迎来到贝壳考研！</strong></p><p>请注意以下事项：</p><ul><li>请妥善保管您的账号信息</li><li>如有问题请联系客服</li></ul>",
 
             // 冷却时间（小时），在此时间内不会再次显示弹窗
             cooldownHours: 0,
 
             // 等待时间（秒），用户需要等待多少秒才能关闭弹窗，设为0表示无需等待
-            closeWaitSeconds: 3
+            closeWaitSeconds: 0
         }
     },
 
     // 认证页面布局配置
     AUTH_LAYOUT_CONFIG: {
         // 布局类型: 'center' 为居中卡片布局, 'split' 为左右分栏布局
-        layoutType: 'center',
+        layoutType: 'split',
 
         // 左右分栏布局配置 (仅当 layoutType 为 'split' 时生效)
         splitLayout: {
