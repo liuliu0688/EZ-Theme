@@ -53,10 +53,10 @@ export const config  = {
   
     //=======================================================
     // 中间件服务器URL (不含路径) 开源地址 https://github.com/codeman857/EZ-Encrypt-Middleware
-    API_MIDDLEWARE_URL: 'https://d2ijw202als7c.ezdemo.xyz',
+    API_MIDDLEWARE_URL: 'https://nnhd.liuliuhan.cfd',
   
     // 中间件加密KEY必须是16位的16进制字符串，必须和中间件key保持一致 在线生成地址 https://www.bejson.com/math/hex_gen/
-    API_MIDDLEWARE_KEY: '4c6f8e5f9467dc71',
+    API_MIDDLEWARE_KEY: 'c4404ad477f99c14',
     //=======================================================
 
     // 中间件路由前缀 (与中间件服务器配置保持一致)
