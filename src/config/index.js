@@ -150,7 +150,7 @@ export const config  = {
             // 左侧区域内容配置
             leftContent: {
                 // 左侧背景图片URL或路径 (如不设置则不设置图片背景)
-                backgroundImage: 'https://www.loliapi.com/acg',
+                backgroundImage: 'https://t.alcy.cc/fj',
 
                 // 左上角网站名称配置
                 siteName: {
@@ -174,7 +174,7 @@ export const config  = {
     // 商店页面配置
     SHOP_CONFIG: {
         // 是否在商店导航上显示热销标记
-        showHotSaleBadge: false,
+        showHotSaleBadge: true,
 
         // 是否显示套餐特性卡片 (true=显示, false=隐藏)
         showPlanFeatureCards: true, // 默认显示
@@ -224,16 +224,16 @@ export const config  = {
         // 下单前二次确认
         confirmOrder: true,
         // 下单前二次确认内容
-        confirmOrderContent: "<p><strong style='color: red'>无法提供相关教程和使用说明。</strong></p><p><strong style='color: red'>不会使用请勿购买，没有退款政策</strong></p>",
+        confirmOrderContent: "<p><strong style='color: red'>虚拟产品不支持退款。</strong></p><p><strong style='color: red'>请咨询网页在线客服，没有退款政策</strong></p>",
 
     },
     // 仪表盘页面配置
     DASHBOARD_CONFIG: {
         // 是否在欢迎卡片中显示用户邮箱 (true=显示, false=隐藏)
-        showUserEmail: false,
+        showUserEmail: true,
 
         // 是否为导入订阅按钮添加高光效果和填充底色 (true=添加效果, false=不添加效果)
-        importButtonHighlightBtnbgcolor: false,
+        importButtonHighlightBtnbgcolor: true,
 
         // ===============================
 
@@ -276,15 +276,15 @@ export const config  = {
         showAndroid: true,
         showMacOS: true,
         showWindows: true,
-        showLinux: true,
-        showOpenWrt: true,
+        showLinux: false,
+        showOpenWrt: false,
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
             ios: 'https://apps.apple.com/app/xxx',
-            android: 'https://play.google.com/store/apps/xxx',
-            macos: 'https://github.com/xxx/releases/latest',
-            windows: 'https://github.com/xxx/releases/latest',
+            android: 'https://zz.liuliuhan.cfd/f/5qIa/cmfa-2.11.14-meta-universal-release.apk',
+            macos: 'https://zz.liuliuhan.cfd/f/ZWHk/Clash.Verge_2.3.2_aarch64.dmg',
+            windows: 'https://zz.liuliuhan.cfd/f/9BCr/Clash.Verge_2.3.2_x64-setup.exe',
             linux: 'https://github.com/xxx/releases/latest',
             openwrt: 'https://github.com/xxx/releases/latest'
         },
@@ -293,41 +293,41 @@ export const config  = {
 
         // iOS平台
         showShadowrocket: true,
-        showSurge: true,
-        showStash: true,
-        showQuantumultX: true,
-        showHiddifyIOS: true,
-        showSingboxIOS: true,
-        showLoon: true,
+        showSurge: false,
+        showStash: false,
+        showQuantumultX: false,
+        showHiddifyIOS: false,
+        showSingboxIOS: false,
+        showLoon: false,
 
         // Android平台客户端
-        showFlClashAndroid: true,
-        showV2rayNG: true,
+        showFlClashAndroid: false,
+        showV2rayNG: false,
         showClashAndroid: true,
-        showSurfboard: true,
+        showSurfboard: false,
         showClashMetaAndroid: true,
-        showNekobox: true,
-        showSingboxAndroid: true,
-        showHiddifyAndroid: true,
+        showNekobox: false,
+        showSingboxAndroid: false,
+        showHiddifyAndroid: false,
 
         // Windows平台客户端
-        showFlClashWindows: true,
+        showFlClashWindows: false,
         showClashVergeWindows: true,
         showClashWindows: true,
-        showNekoray: true,
-        showSingboxWindows: true,
-        showHiddifyWindows: true,
+        showNekoray: false,
+        showSingboxWindows: false,
+        showHiddifyWindows: false,
 
         // MacOS平台客户端
-        showFlClashMac: true,
+        showFlClashMac: false,
         showClashVergeMac: true,
         showClashX: true,
-        showClashMetaX: true,
-        showSurgeMac: true,
-        showStashMac: true,
-        showQuantumultXMac: true,
-        showSingboxMac: true,
-        showHiddifyMac: true
+        showClashMetaX: false,
+        showSurgeMac: false,
+        showStashMac: false,
+        showQuantumultXMac: false,
+        showSingboxMac: false,
+        showHiddifyMac: false
     },
 
     // ================ Xiao 版本的配置 =======================
@@ -338,7 +338,7 @@ export const config  = {
         showGiftCardRedeem: false, // 只有Xiao-V2board支持礼品卡兑换
 
         // 是否显示最近登录设备栏目 (true=显示, false=隐藏)
-        showRecentDevices: true
+        showRecentDevices: false
     },
 
     // =======================================================
@@ -401,7 +401,7 @@ export const config  = {
         openPaymentInNewTab: true, // 默认开启
 
         // 支付二维码大小 (像素)
-        qrcodeSize: 200,
+        qrcodeSize: 230,
 
         // 支付二维码的颜色
         qrcodeColor: '#000000',
@@ -443,7 +443,7 @@ export const config  = {
     // 邀请页面配置
     INVITE_CONFIG: {
         // 是否在导航栏的邀请按钮上显示返利标记
-        showCommissionBadge: false,
+        showCommissionBadge: true,
 
         // 返佣记录每页显示数量（最小值为10，API限制每次请求最少需要返回10条记录）
         recordsPerPage: 10,
@@ -522,7 +522,7 @@ export const config  = {
         showNodeDetails: false,
 
         // 是否允许查看节点详细信息（控制详情按钮和模态框）
-        allowViewNodeInfo: true
+        allowViewNodeInfo: false
     },
 
     // 客服系统配置
